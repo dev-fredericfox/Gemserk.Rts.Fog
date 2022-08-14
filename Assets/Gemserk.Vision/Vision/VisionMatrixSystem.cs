@@ -59,7 +59,7 @@ namespace Gemserk.Vision
         {
             var w = (float) width;
             var h = (float) height;
-
+            // Debug.Log("vision p:" + p);
             var i = Mathf.RoundToInt(p.x / _localScale.x + w * 0.5f);
             var j = Mathf.RoundToInt(p.y / _localScale.y + h * 0.5f);
 
@@ -397,6 +397,9 @@ namespace Gemserk.Vision
         
         public void UpdateVision(VisionData vision)
         {
+            Debug.Log("vision:" + vision);
+            // Debug.Log("TEST:" + vision.position3s);
+            Debug.Log("vision vision position:" + vision.position);
             var matrixPosition = GetMatrixPosition(vision.position);
             UpdateVision(matrixPosition, vision.range, vision.player, vision.groundLevel);
         }

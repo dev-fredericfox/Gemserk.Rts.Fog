@@ -7,3 +7,7 @@ Showcase:
 ![](images/fog-texture-scene.png "Fog over a stage")
 
 ![](images/render_texture.png "Fog over a stage")
+
+Instructions:
+
+Open The Scene MainScene > PerformanceScene
